@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  RateMe
+
+  Created by Maksim Kapitonov on 15.02.2021.
+  
+*/
+
+// MARK: - Common
+
+"commonInDev" = "В разработке :)";
+
+// MARK: - Sidebar
+
+"sidebarMain" = "Главное";
+"sidebarCategories" = "Категории";
+"sidebarAllRates" = "Все оценки";
+"sidebarFavourites" = "Избранное";
+"sidebarRecentlyAdded" = "Недавно добавленные";
+"sidebarProfile" = "Профиль";
+"sidebarSettings" = "Настройки";
+"sidebarAccount" = "Аккаунт";
+
+// MARK: - Tabbar
+
+"tabbarMyRates" = "Мои оценки";
+"tabbarScan" = "Сканировать";

@@ -9,15 +9,27 @@
 /* Begin PBXBuildFile section */
 		FB2B82AC25DA894F0093969D /* RateMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B829925DA894E0093969D /* RateMeApp.swift */; };
 		FB2B82AD25DA894F0093969D /* RateMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B829925DA894E0093969D /* RateMeApp.swift */; };
-		FB2B82AE25DA894F0093969D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B829A25DA894E0093969D /* ContentView.swift */; };
-		FB2B82AF25DA894F0093969D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B829A25DA894E0093969D /* ContentView.swift */; };
+		FB2B82AE25DA894F0093969D /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B829A25DA894E0093969D /* InitialView.swift */; };
+		FB2B82AF25DA894F0093969D /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B829A25DA894E0093969D /* InitialView.swift */; };
 		FB2B82B025DA894F0093969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2B829B25DA894F0093969D /* Assets.xcassets */; };
 		FB2B82B125DA894F0093969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2B829B25DA894F0093969D /* Assets.xcassets */; };
+		FB2B82C825DA90AD0093969D /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B82C725DA90AD0093969D /* SidebarView.swift */; };
+		FB2B82CB25DA92040093969D /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B82C725DA90AD0093969D /* SidebarView.swift */; };
+		FB2B82E225DA9ED70093969D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB2B82E525DA9ED70093969D /* Localizable.strings */; };
+		FB2B82E325DA9ED70093969D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB2B82E525DA9ED70093969D /* Localizable.strings */; };
+		FB2B82EA25DAA3EB0093969D /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B82E925DAA3EB0093969D /* TabbarView.swift */; };
+		FB2B82EB25DAA3EB0093969D /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B82E925DAA3EB0093969D /* TabbarView.swift */; };
+		FB2B82F225DAA4760093969D /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B82F125DAA4760093969D /* Icons.swift */; };
+		FB2B82F325DAA4760093969D /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B82F125DAA4760093969D /* Icons.swift */; };
+		FB2B82FB25DAB2FB0093969D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB2B82FE25DAB2FB0093969D /* Localizable.strings */; };
+		FB2B82FC25DAB2FB0093969D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB2B82FE25DAB2FB0093969D /* Localizable.strings */; };
+		FB2B830225DAB4B20093969D /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B830125DAB4B20093969D /* Localizable.swift */; };
+		FB2B830325DAB4B20093969D /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B830125DAB4B20093969D /* Localizable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB2B829925DA894E0093969D /* RateMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateMeApp.swift; sourceTree = "<group>"; };
-		FB2B829A25DA894E0093969D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB2B829A25DA894E0093969D /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		FB2B829B25DA894F0093969D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB2B82A025DA894F0093969D /* RateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2B82A325DA894F0093969D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -25,6 +37,12 @@
 		FB2B82AA25DA894F0093969D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB2B82AB25DA894F0093969D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		FB2B82BC25DA896A0093969D /* RateMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RateMe.entitlements; sourceTree = "<group>"; };
+		FB2B82C725DA90AD0093969D /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		FB2B82E425DA9ED70093969D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB2B82E925DAA3EB0093969D /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		FB2B82F125DAA4760093969D /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		FB2B82FD25DAB2FB0093969D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB2B830125DAB4B20093969D /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +77,8 @@
 		FB2B829825DA894E0093969D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				FB2B829925DA894E0093969D /* RateMeApp.swift */,
-				FB2B829A25DA894E0093969D /* ContentView.swift */,
-				FB2B829B25DA894F0093969D /* Assets.xcassets */,
+				FB2B82C525DA90860093969D /* Modules */,
+				FB2B82D225DA94A40093969D /* Resources */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -90,6 +107,69 @@
 				FB2B82AB25DA894F0093969D /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		FB2B82C525DA90860093969D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B82E825DAA3C40093969D /* Tabbar */,
+				FB2B82C625DA908F0093969D /* Sidebar */,
+				FB2B82EE25DAA3F30093969D /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FB2B82C625DA908F0093969D /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B82C725DA90AD0093969D /* SidebarView.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		FB2B82D225DA94A40093969D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B82DA25DA9EA00093969D /* Localizable */,
+				FB2B82D325DA94B60093969D /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB2B82D325DA94B60093969D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B829B25DA894F0093969D /* Assets.xcassets */,
+				FB2B82F125DAA4760093969D /* Icons.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FB2B82DA25DA9EA00093969D /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B82E525DA9ED70093969D /* Localizable.strings */,
+				FB2B82FE25DAB2FB0093969D /* Localizable.strings */,
+				FB2B830125DAB4B20093969D /* Localizable.swift */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		FB2B82E825DAA3C40093969D /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B82E925DAA3EB0093969D /* TabbarView.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		FB2B82EE25DAA3F30093969D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B829925DA894E0093969D /* RateMeApp.swift */,
+				FB2B829A25DA894E0093969D /* InitialView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +232,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ru,
 				Base,
 			);
 			mainGroup = FB2B829325DA894D0093969D;
@@ -171,6 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2B82B025DA894F0093969D /* Assets.xcassets in Resources */,
+				FB2B82FB25DAB2FB0093969D /* Localizable.strings in Resources */,
+				FB2B82E225DA9ED70093969D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2B82B125DA894F0093969D /* Assets.xcassets in Resources */,
+				FB2B82FC25DAB2FB0093969D /* Localizable.strings in Resources */,
+				FB2B82E325DA9ED70093969D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,8 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB2B82AE25DA894F0093969D /* ContentView.swift in Sources */,
+				FB2B82AE25DA894F0093969D /* InitialView.swift in Sources */,
 				FB2B82AC25DA894F0093969D /* RateMeApp.swift in Sources */,
+				FB2B82EA25DAA3EB0093969D /* TabbarView.swift in Sources */,
+				FB2B82F225DAA4760093969D /* Icons.swift in Sources */,
+				FB2B830225DAB4B20093969D /* Localizable.swift in Sources */,
+				FB2B82C825DA90AD0093969D /* SidebarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,12 +287,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB2B82AF25DA894F0093969D /* ContentView.swift in Sources */,
+				FB2B82AF25DA894F0093969D /* InitialView.swift in Sources */,
 				FB2B82AD25DA894F0093969D /* RateMeApp.swift in Sources */,
+				FB2B82EB25DAA3EB0093969D /* TabbarView.swift in Sources */,
+				FB2B82F325DAA4760093969D /* Icons.swift in Sources */,
+				FB2B830325DAB4B20093969D /* Localizable.swift in Sources */,
+				FB2B82CB25DA92040093969D /* SidebarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB2B82E525DA9ED70093969D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB2B82E425DA9ED70093969D /* ru */,
+			);
+			name = Localizable.strings;
+			path = Shared/Resources/Localizable;
+			sourceTree = SOURCE_ROOT;
+		};
+		FB2B82FE25DAB2FB0093969D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB2B82FD25DAB2FB0093969D /* en */,
+			);
+			name = Localizable.strings;
+			path = Shared/Resources/Localizable;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FB2B82B225DA894F0093969D /* Debug */ = {
@@ -257,6 +371,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -310,6 +426,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -327,8 +445,7 @@
 				DEVELOPMENT_TEAM = V28BYBPR3J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,10 +453,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.maksimkapitonov.RateMe.ios;
 				PRODUCT_NAME = RateMe;
 				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -353,8 +470,7 @@
 				DEVELOPMENT_TEAM = V28BYBPR3J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,10 +478,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.maksimkapitonov.RateMe.ios;
 				PRODUCT_NAME = RateMe;
 				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

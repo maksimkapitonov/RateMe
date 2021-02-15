@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  RateMe
+
+  Created by Maksim Kapitonov on 15.02.2021.
+  
+*/
+
+// MARK: - Common
+
+"commonInDev" = "In development :)";
+
+// MARK: - Sidebar
+
+"sidebarMain" = "Main";
+"sidebarCategories" = "Categories";
+"sidebarAllRates" = "All rates";
+"sidebarFavourites" = "Favourites";
+"sidebarRecentlyAdded" = "Recently added";
+"sidebarProfile" = "Profile";
+"sidebarSettings" = "Settings";
+"sidebarAccount" = "Account";
+
+// MARK: - Tabbar
+
+"tabbarMyRates" = "My rates";
+"tabbarScan" = "Scan";
