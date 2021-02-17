@@ -9,12 +9,14 @@ import SwiftUI
 
 struct TabbarView: View {
     
+    @Binding var selection : Set<NavigationItems>
+    
     var body: some View {
-        TabView {
+        TabView(selection: $selection) {
             NavigationView {
-                Text(Localizable.tabbarMyRates.rawValue)
-                    .navigationTitle(Localizable.tabbarMyRates.rawValue)
+                MyRatesView()
             }
+            .tag(NavigationItems.myRates)
             .tabItem {
                 Label(Localizable.tabbarMyRates.rawValue, systemImage: Icons.rates)
             }
@@ -22,6 +24,7 @@ struct TabbarView: View {
             NavigationView {
                 Text(Localizable.commonInDev.rawValue)
             }
+            .tag(NavigationItems.scan)
             .tabItem {
                 Label(Localizable.tabbarScan.rawValue, systemImage: Icons.scanBarcode)
             }
@@ -30,15 +33,11 @@ struct TabbarView: View {
                 Text(Localizable.commonInDev.rawValue)
                     .navigationTitle(Localizable.sidebarAccount.rawValue)
             }
+            .tag(NavigationItems.profile)
             .tabItem {
                 Label(Localizable.sidebarAccount.rawValue, systemImage: Icons.account)
             }
         }
     }
-}
-
-struct TabbarView_Previews: PreviewProvider {
-    static var previews: some View {
-        TabbarView()
-    }
+    
 }

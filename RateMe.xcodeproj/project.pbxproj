@@ -25,6 +25,22 @@
 		FB2B82FC25DAB2FB0093969D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB2B82FE25DAB2FB0093969D /* Localizable.strings */; };
 		FB2B830225DAB4B20093969D /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B830125DAB4B20093969D /* Localizable.swift */; };
 		FB2B830325DAB4B20093969D /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B830125DAB4B20093969D /* Localizable.swift */; };
+		FB2B832825DACA6B0093969D /* AddRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B832725DACA6B0093969D /* AddRateView.swift */; };
+		FB2B832925DACA6B0093969D /* AddRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B832725DACA6B0093969D /* AddRateView.swift */; };
+		FB2B833025DACB270093969D /* RateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B832F25DACB270093969D /* RateItem.swift */; };
+		FB2B833125DACB270093969D /* RateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B832F25DACB270093969D /* RateItem.swift */; };
+		FB2B833D25DBBA4D0093969D /* MyRatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B833C25DBBA4D0093969D /* MyRatesView.swift */; };
+		FB2B833E25DBBA4D0093969D /* MyRatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B833C25DBBA4D0093969D /* MyRatesView.swift */; };
+		FB2B834225DBBA9D0093969D /* MyRatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B834125DBBA9D0093969D /* MyRatesViewModel.swift */; };
+		FB2B834325DBBA9D0093969D /* MyRatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B834125DBBA9D0093969D /* MyRatesViewModel.swift */; };
+		FB2B834F25DBC2CB0093969D /* AddRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B834E25DBC2CB0093969D /* AddRateViewModel.swift */; };
+		FB2B835025DBC2CB0093969D /* AddRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B834E25DBC2CB0093969D /* AddRateViewModel.swift */; };
+		FB2B835925DC16450093969D /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B835825DC16450093969D /* StarsView.swift */; };
+		FB2B835A25DC16450093969D /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B835825DC16450093969D /* StarsView.swift */; };
+		FB2B836025DD0AF60093969D /* NavigationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B835F25DD0AF60093969D /* NavigationItems.swift */; };
+		FB2B836125DD0AF60093969D /* NavigationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B835F25DD0AF60093969D /* NavigationItems.swift */; };
+		FB2B836925DD14D50093969D /* RateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B836825DD14D50093969D /* RateCardView.swift */; };
+		FB2B836A25DD14D50093969D /* RateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B836825DD14D50093969D /* RateCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +59,14 @@
 		FB2B82F125DAA4760093969D /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		FB2B82FD25DAB2FB0093969D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FB2B830125DAB4B20093969D /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		FB2B832725DACA6B0093969D /* AddRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRateView.swift; sourceTree = "<group>"; };
+		FB2B832F25DACB270093969D /* RateItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateItem.swift; sourceTree = "<group>"; };
+		FB2B833C25DBBA4D0093969D /* MyRatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRatesView.swift; sourceTree = "<group>"; };
+		FB2B834125DBBA9D0093969D /* MyRatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRatesViewModel.swift; sourceTree = "<group>"; };
+		FB2B834E25DBC2CB0093969D /* AddRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRateViewModel.swift; sourceTree = "<group>"; };
+		FB2B835825DC16450093969D /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
+		FB2B835F25DD0AF60093969D /* NavigationItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItems.swift; sourceTree = "<group>"; };
+		FB2B836825DD14D50093969D /* RateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +136,8 @@
 		FB2B82C525DA90860093969D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FB2B833825DBBA190093969D /* MyRates */,
+				FB2B832625DACA580093969D /* AddRate */,
 				FB2B82E825DAA3C40093969D /* Tabbar */,
 				FB2B82C625DA908F0093969D /* Sidebar */,
 				FB2B82EE25DAA3F30093969D /* Main */,
@@ -168,8 +194,78 @@
 			children = (
 				FB2B829925DA894E0093969D /* RateMeApp.swift */,
 				FB2B829A25DA894E0093969D /* InitialView.swift */,
+				FB2B835F25DD0AF60093969D /* NavigationItems.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		FB2B832625DACA580093969D /* AddRate */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B832D25DACAEF0093969D /* ViewModels */,
+				FB2B832E25DACAF90093969D /* Views */,
+				FB2B832C25DACAE20093969D /* Models */,
+			);
+			path = AddRate;
+			sourceTree = "<group>";
+		};
+		FB2B832C25DACAE20093969D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB2B832D25DACAEF0093969D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B834E25DBC2CB0093969D /* AddRateViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FB2B832E25DACAF90093969D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B832725DACA6B0093969D /* AddRateView.swift */,
+				FB2B835825DC16450093969D /* StarsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB2B833825DBBA190093969D /* MyRates */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B833B25DBBA350093969D /* ViewModels */,
+				FB2B833A25DBBA2F0093969D /* Views */,
+				FB2B833925DBBA290093969D /* Models */,
+			);
+			path = MyRates;
+			sourceTree = "<group>";
+		};
+		FB2B833925DBBA290093969D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B832F25DACB270093969D /* RateItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB2B833A25DBBA2F0093969D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B833C25DBBA4D0093969D /* MyRatesView.swift */,
+				FB2B836825DD14D50093969D /* RateCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB2B833B25DBBA350093969D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B834125DBBA9D0093969D /* MyRatesViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,10 +370,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2B836925DD14D50093969D /* RateCardView.swift in Sources */,
+				FB2B836025DD0AF60093969D /* NavigationItems.swift in Sources */,
 				FB2B82AE25DA894F0093969D /* InitialView.swift in Sources */,
+				FB2B835925DC16450093969D /* StarsView.swift in Sources */,
 				FB2B82AC25DA894F0093969D /* RateMeApp.swift in Sources */,
 				FB2B82EA25DAA3EB0093969D /* TabbarView.swift in Sources */,
+				FB2B832825DACA6B0093969D /* AddRateView.swift in Sources */,
+				FB2B833025DACB270093969D /* RateItem.swift in Sources */,
 				FB2B82F225DAA4760093969D /* Icons.swift in Sources */,
+				FB2B834225DBBA9D0093969D /* MyRatesViewModel.swift in Sources */,
+				FB2B834F25DBC2CB0093969D /* AddRateViewModel.swift in Sources */,
+				FB2B833D25DBBA4D0093969D /* MyRatesView.swift in Sources */,
 				FB2B830225DAB4B20093969D /* Localizable.swift in Sources */,
 				FB2B82C825DA90AD0093969D /* SidebarView.swift in Sources */,
 			);
@@ -287,10 +391,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2B836A25DD14D50093969D /* RateCardView.swift in Sources */,
+				FB2B836125DD0AF60093969D /* NavigationItems.swift in Sources */,
 				FB2B82AF25DA894F0093969D /* InitialView.swift in Sources */,
+				FB2B835A25DC16450093969D /* StarsView.swift in Sources */,
 				FB2B82AD25DA894F0093969D /* RateMeApp.swift in Sources */,
 				FB2B82EB25DAA3EB0093969D /* TabbarView.swift in Sources */,
+				FB2B832925DACA6B0093969D /* AddRateView.swift in Sources */,
+				FB2B833125DACB270093969D /* RateItem.swift in Sources */,
 				FB2B82F325DAA4760093969D /* Icons.swift in Sources */,
+				FB2B834325DBBA9D0093969D /* MyRatesViewModel.swift in Sources */,
+				FB2B835025DBC2CB0093969D /* AddRateViewModel.swift in Sources */,
+				FB2B833E25DBBA4D0093969D /* MyRatesView.swift in Sources */,
 				FB2B830325DAB4B20093969D /* Localizable.swift in Sources */,
 				FB2B82CB25DA92040093969D /* SidebarView.swift in Sources */,
 			);
@@ -442,6 +554,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RateMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = V28BYBPR3J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -450,6 +563,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maksimkapitonov.RateMe.ios;
 				PRODUCT_NAME = RateMe;
 				SDKROOT = iphoneos;
@@ -467,6 +581,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RateMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = V28BYBPR3J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -475,6 +590,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maksimkapitonov.RateMe.ios;
 				PRODUCT_NAME = RateMe;
 				SDKROOT = iphoneos;
@@ -494,6 +610,7 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = V28BYBPR3J;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -503,6 +620,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maksimkapitonov.RateMe.mac;
 				PRODUCT_NAME = RateMe;
 				SDKROOT = macosx;
@@ -518,6 +636,7 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = V28BYBPR3J;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -527,6 +646,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maksimkapitonov.RateMe.mac;
 				PRODUCT_NAME = RateMe;
 				SDKROOT = macosx;

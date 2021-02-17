@@ -16,24 +16,34 @@ extension SidebarView {
 }
 
 struct SidebarView: View {
+    
+    @Binding var selection : Set<NavigationItems>
+    
     var body: some View {
         NavigationView {
-            List {
+            List(selection: $selection) {
                 Text(Localizable.sidebarMain.rawValue)
 
                 Group{
                     NavigationLink(destination: Text(Localizable.commonInDev.rawValue)) {
                         Label(Localizable.sidebarCategories.rawValue, systemImage: Icons.list)
                     }
-                    NavigationLink(destination: Text(Localizable.commonInDev.rawValue)) {
+                    .tag(NavigationItems.categories)
+                    
+                    NavigationLink(destination: MyRatesView()) {
                         Label(Localizable.sidebarAllRates.rawValue, systemImage: Icons.rates)
                     }
+                    .tag(NavigationItems.myRates)
+                    
                     NavigationLink(destination: Text(Localizable.commonInDev.rawValue)) {
                         Label(Localizable.sidebarFavourites.rawValue, systemImage: Icons.favourite)
                     }
+                    .tag(NavigationItems.favouriteRates)
+                    
                     NavigationLink(destination: Text(Localizable.commonInDev.rawValue)) {
                         Label(Localizable.sidebarRecentlyAdded.rawValue, systemImage: Icons.recent)
                     }
+                    .tag(NavigationItems.recentRates)
                 }
                 
                 Divider()
@@ -44,18 +54,24 @@ struct SidebarView: View {
                     NavigationLink(destination: Text(Localizable.commonInDev.rawValue)) {
                         Label(Localizable.sidebarSettings.rawValue, systemImage: Icons.settings)
                     }
+                    .tag(NavigationItems.account)
+                    
                     NavigationLink(destination: Text(Localizable.commonInDev.rawValue)) {
                         Label(Localizable.sidebarAccount.rawValue, systemImage: Icons.account)
                     }
+                    .tag(NavigationItems.settings)
                 }
             }
+            .navigationTitle(Localizable.commonRateMeApp.rawValue)
             .listStyle(SidebarListStyle())
             .toolbar {
+                #if os(macOS)
                 ToolbarItem(placement: .navigation) {
                     Button(action: toggleSidebar, label: {
                         Image(systemName: Icons.sidebarLeft)
                     })
                 }
+                #endif
             }
             .frame(
                 minWidth: Constants().minSidebarWidth,
@@ -63,7 +79,7 @@ struct SidebarView: View {
                 maxWidth: Constants().maxSidebarWidth
             )
             
-            Text(Localizable.commonInDev.rawValue)
+            MyRatesView()
         }
     }
     
@@ -72,11 +88,5 @@ struct SidebarView: View {
         #else
         NSApp.keyWindow?.firstResponder?.tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
         #endif
-    }
-}
-
-struct SidebarView_Previews: PreviewProvider {
-    static var previews: some View {
-        SidebarView()
     }
 }

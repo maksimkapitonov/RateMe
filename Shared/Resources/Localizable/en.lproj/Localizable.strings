@@ -9,6 +9,10 @@
 // MARK: - Common
 
 "commonInDev" = "In development :)";
+"commonAdd" = "Add";
+"commonCancel" = "Cancel";
+"commonSave" = "Save";
+"commonRateMeApp" = "RateMe";
 
 // MARK: - Sidebar
 
@@ -25,3 +29,11 @@
 
 "tabbarMyRates" = "My rates";
 "tabbarScan" = "Scan";
+
+// MARK: - Add rate item
+
+"addRateItemTitle" = "Add new rate";
+"addRateItemName" = "Title";
+"addRateItemRating" = "Rating";
+"addRateItemDescription" = "Description";
+"addRateItemAddToFavourites" = "Add to favourites";

@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct InitialView: View {
+    
+    @State private var selection : Set<NavigationItems> = [.myRates]
+    
+    #if os(macOS)
     var body: some View {
-        #if os(iOS)
-        TabbarView()
-        #else
-        SidebarView()
-        #endif
+        SidebarView(selection: $selection)
     }
+
+    #else
+    private var idiom : UIUserInterfaceIdiom { UIDevice.current.userInterfaceIdiom }
+    
+    var body: some View {
+        if idiom == .phone {
+            TabbarView(selection: $selection)
+        } else if idiom == .pad {
+            SidebarView(selection: $selection)
+        } else {
+            Text(Localizable.commonInDev.rawValue)
+        }
+    }
+    
+    #endif
 }
 
 struct InitialView_Previews: PreviewProvider {

@@ -17,5 +17,6 @@ struct Icons {
     static let account = "person.crop.circle"
     static let scanBarcode = "barcode.viewfinder"
     static let sidebarLeft = "sidebar.left"
+    static let star = "star.fill"
     
 }

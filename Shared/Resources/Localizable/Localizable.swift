@@ -12,6 +12,10 @@ enum Localizable: LocalizedStringKey {
     // MARK: - Common
     
     case commonInDev
+    case commonAdd
+    case commonCancel
+    case commonSave
+    case commonRateMeApp
     
     // MARK: - Sidebar
     
@@ -28,5 +32,13 @@ enum Localizable: LocalizedStringKey {
     
     case tabbarMyRates
     case tabbarScan
+    
+    // MARK: - Add rate item
+    
+    case addRateItemTitle
+    case addRateItemName
+    case addRateItemRating
+    case addRateItemDescription
+    case addRateItemAddToFavourites
     
 }
