@@ -17,6 +17,10 @@ extension MyRatesView {
 
 struct MyRatesView: View {
     
+    // MARK: - Dependencies
+    
+    @ObservedObject var rateData: RateData
+
     // MARK: - Private properties
     
     @ObservedObject private var viewModel = MyRatesViewModel()
@@ -29,12 +33,18 @@ struct MyRatesView: View {
         )
     ]
     
+    // MARK: - Init
+    
+    init(data: RateData) {
+        rateData = data
+    }
+    
     // MARK: - Body
     
     var body: some View {
         ScrollView(showsIndicators: false) {
             LazyVGrid(columns: gridItemLayout) {
-                ForEach(viewModel.rateItems, id: \.self) {
+                ForEach(rateData.rateItems, id: \.self) {
                     RateCardView(rateItem: $0)
                 }
             }
@@ -43,22 +53,15 @@ struct MyRatesView: View {
         .navigationTitle(Localizable.tabbarMyRates.rawValue)
         .toolbar {
             ToolbarItem(placement: .automatic) {
-                #if os(macOS)
                 Button(
                     Localizable.commonAdd.rawValue,
                     action: addRateItem
                 )
-                #else
-                NavigationLink(
-                    Localizable.commonAdd.rawValue,
-                    destination: AddRateView()
-                )
-                #endif
             }
         }
         .sheet(
             isPresented: $showingAddItemView) {
-            AddRateView()
+            AddRateView(data: rateData)
         }
     }
     
@@ -71,6 +74,6 @@ struct MyRatesView: View {
 
 struct MyRatesView_Previews: PreviewProvider {
     static var previews: some View {
-        MyRatesView()
+        MyRatesView(data: RateData())
     }
 }

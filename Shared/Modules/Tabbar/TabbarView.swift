@@ -9,12 +9,20 @@ import SwiftUI
 
 struct TabbarView: View {
     
+    // MARK: - Dependencies
+    
     @Binding var selection : Set<NavigationItems>
+    
+    // MARK: - Private properties
+    
+    @ObservedObject private var rateData = RateData()
+    
+    // MARK: - Body
     
     var body: some View {
         TabView(selection: $selection) {
             NavigationView {
-                MyRatesView()
+                MyRatesView(data: rateData)
             }
             .tag(NavigationItems.myRates)
             .tabItem {

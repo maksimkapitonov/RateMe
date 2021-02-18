@@ -21,16 +21,37 @@ extension AddRateView {
 
 struct AddRateView: View {
     
+    // MARK: - Dependencies
+    
     @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var data: RateData
     
     // MARK: - Private properties
     
     @ObservedObject private var viewModel = AddRateViewModel()
     private var ratings = Constants().minRating...Constants().maxRating
     
+    // MARK: - Init
+    
+    init(data: RateData) {
+        self.data = data
+    }
+    
     // MARK: - Body
     
     var body: some View {
+        #if os(macOS)
+        formView
+        #else
+        NavigationView {
+            formView
+        }
+        #endif
+    }
+    
+    // MARK: - Body properties
+    
+    private var formView: some View {
         Form() {
             Section(header: Text(Localizable.addRateItemName.rawValue)) {
                 TextField("", text: $viewModel.newItem.name)
@@ -80,8 +101,6 @@ struct AddRateView: View {
         }
     }
     
-    // MARK: - Body properties
-    
     private var pickerStyle: some PickerStyle {
         #if os(macOS)
         return InlinePickerStyle()
@@ -121,13 +140,14 @@ struct AddRateView: View {
     }
     
     private func saveItem() {
-        
+        presentationMode.wrappedValue.dismiss()
+        data.rateItems.append(viewModel.newItem)
     }
     
 }
 
 struct AddRateView_Previews: PreviewProvider {
     static var previews: some View {
-        AddRateView()
+        AddRateView(data: RateData())
     }
 }

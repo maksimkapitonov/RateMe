@@ -17,7 +17,15 @@ extension SidebarView {
 
 struct SidebarView: View {
     
+    // MARK: - Dependencies
+    
     @Binding var selection : Set<NavigationItems>
+    
+    // MARK: - Private properties
+    
+    @ObservedObject private var rateData = RateData()
+    
+    // MARK: - Body
     
     var body: some View {
         NavigationView {
@@ -30,7 +38,7 @@ struct SidebarView: View {
                     }
                     .tag(NavigationItems.categories)
                     
-                    NavigationLink(destination: MyRatesView()) {
+                    NavigationLink(destination: MyRatesView(data: rateData)) {
                         Label(Localizable.sidebarAllRates.rawValue, systemImage: Icons.rates)
                     }
                     .tag(NavigationItems.myRates)
@@ -79,7 +87,7 @@ struct SidebarView: View {
                 maxWidth: Constants().maxSidebarWidth
             )
             
-            MyRatesView()
+            MyRatesView(data: rateData)
         }
     }
     
