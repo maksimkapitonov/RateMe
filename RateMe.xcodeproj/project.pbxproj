@@ -43,6 +43,12 @@
 		FB2B836A25DD14D50093969D /* RateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B836825DD14D50093969D /* RateCardView.swift */; };
 		FB2B838B25DD676C0093969D /* RateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B838A25DD676C0093969D /* RateData.swift */; };
 		FB2B838C25DD676C0093969D /* RateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B838A25DD676C0093969D /* RateData.swift */; };
+		FB2B83A125DE86D20093969D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83A025DE86D20093969D /* Colors.swift */; };
+		FB2B83A225DE86D20093969D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83A025DE86D20093969D /* Colors.swift */; };
+		FB2B83A625DE8D4B0093969D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83A525DE8D4B0093969D /* Images.swift */; };
+		FB2B83A725DE8D4B0093969D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83A525DE8D4B0093969D /* Images.swift */; };
+		FB2B83AC25DE91650093969D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83AB25DE91650093969D /* ButtonStyle.swift */; };
+		FB2B83AD25DE91650093969D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83AB25DE91650093969D /* ButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +76,9 @@
 		FB2B835F25DD0AF60093969D /* NavigationItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItems.swift; sourceTree = "<group>"; };
 		FB2B836825DD14D50093969D /* RateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCardView.swift; sourceTree = "<group>"; };
 		FB2B838A25DD676C0093969D /* RateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateData.swift; sourceTree = "<group>"; };
+		FB2B83A025DE86D20093969D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FB2B83A525DE8D4B0093969D /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		FB2B83AB25DE91650093969D /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +168,8 @@
 		FB2B82D225DA94A40093969D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FB2B83AA25DE914E0093969D /* Styles */,
+				FB2B839D25DE86920093969D /* Colors */,
 				FB2B82DA25DA9EA00093969D /* Localizable */,
 				FB2B82D325DA94B60093969D /* Images */,
 			);
@@ -170,6 +181,7 @@
 			children = (
 				FB2B829B25DA894F0093969D /* Assets.xcassets */,
 				FB2B82F125DAA4760093969D /* Icons.swift */,
+				FB2B83A525DE8D4B0093969D /* Images.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -270,6 +282,22 @@
 				FB2B834125DBBA9D0093969D /* MyRatesViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FB2B839D25DE86920093969D /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B83A025DE86D20093969D /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		FB2B83AA25DE914E0093969D /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B83AB25DE91650093969D /* ButtonStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,16 +405,19 @@
 				FB2B836925DD14D50093969D /* RateCardView.swift in Sources */,
 				FB2B836025DD0AF60093969D /* NavigationItems.swift in Sources */,
 				FB2B82AE25DA894F0093969D /* InitialView.swift in Sources */,
+				FB2B83A625DE8D4B0093969D /* Images.swift in Sources */,
 				FB2B835925DC16450093969D /* StarsView.swift in Sources */,
 				FB2B82AC25DA894F0093969D /* RateMeApp.swift in Sources */,
 				FB2B82EA25DAA3EB0093969D /* TabbarView.swift in Sources */,
 				FB2B832825DACA6B0093969D /* AddRateView.swift in Sources */,
 				FB2B838B25DD676C0093969D /* RateData.swift in Sources */,
 				FB2B833025DACB270093969D /* RateItem.swift in Sources */,
+				FB2B83A125DE86D20093969D /* Colors.swift in Sources */,
 				FB2B82F225DAA4760093969D /* Icons.swift in Sources */,
 				FB2B834225DBBA9D0093969D /* MyRatesViewModel.swift in Sources */,
 				FB2B834F25DBC2CB0093969D /* AddRateViewModel.swift in Sources */,
 				FB2B833D25DBBA4D0093969D /* MyRatesView.swift in Sources */,
+				FB2B83AC25DE91650093969D /* ButtonStyle.swift in Sources */,
 				FB2B830225DAB4B20093969D /* Localizable.swift in Sources */,
 				FB2B82C825DA90AD0093969D /* SidebarView.swift in Sources */,
 			);
@@ -399,16 +430,19 @@
 				FB2B836A25DD14D50093969D /* RateCardView.swift in Sources */,
 				FB2B836125DD0AF60093969D /* NavigationItems.swift in Sources */,
 				FB2B82AF25DA894F0093969D /* InitialView.swift in Sources */,
+				FB2B83A725DE8D4B0093969D /* Images.swift in Sources */,
 				FB2B835A25DC16450093969D /* StarsView.swift in Sources */,
 				FB2B82AD25DA894F0093969D /* RateMeApp.swift in Sources */,
 				FB2B82EB25DAA3EB0093969D /* TabbarView.swift in Sources */,
 				FB2B832925DACA6B0093969D /* AddRateView.swift in Sources */,
 				FB2B838C25DD676C0093969D /* RateData.swift in Sources */,
 				FB2B833125DACB270093969D /* RateItem.swift in Sources */,
+				FB2B83A225DE86D20093969D /* Colors.swift in Sources */,
 				FB2B82F325DAA4760093969D /* Icons.swift in Sources */,
 				FB2B834325DBBA9D0093969D /* MyRatesViewModel.swift in Sources */,
 				FB2B835025DBC2CB0093969D /* AddRateViewModel.swift in Sources */,
 				FB2B833E25DBBA4D0093969D /* MyRatesView.swift in Sources */,
+				FB2B83AD25DE91650093969D /* ButtonStyle.swift in Sources */,
 				FB2B830325DAB4B20093969D /* Localizable.swift in Sources */,
 				FB2B82CB25DA92040093969D /* SidebarView.swift in Sources */,
 			);

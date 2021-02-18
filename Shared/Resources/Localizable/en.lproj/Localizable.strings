@@ -37,3 +37,7 @@
 "addRateItemRating" = "Rating";
 "addRateItemDescription" = "Description";
 "addRateItemAddToFavourites" = "Add to favourites";
+
+// MARK: - My rates
+
+"myRatesAddFirst" = "Add your first rate";
