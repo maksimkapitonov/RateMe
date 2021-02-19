@@ -29,7 +29,11 @@ struct AddRateView: View {
     // MARK: - Private properties
     
     @ObservedObject private var viewModel = AddRateViewModel()
+    #if os(macOS)
+    @State private var inputImage: NSImage?
+    #else
     @State private var inputImage: UIImage?
+    #endif
     
     // MARK: - Init
     
@@ -104,7 +108,10 @@ struct AddRateView: View {
             #endif
         }
         .sheet(isPresented: $viewModel.showingImagePicker, onDismiss: checkImage) {
+            #if os(macOS)
+            #else
             ImagePicker(image: self.$inputImage)
+            #endif
         }
     }
     
@@ -112,7 +119,19 @@ struct AddRateView: View {
         if viewModel.selectedImage == nil {
             return AnyView(addImageView)
         } else {
+            #if os(macOS)
+            return AnyView(
+                HStack {
+                    Button(action: selectImage) {
+                        Text(Localizable.addRateItemChangeImage.rawValue)
+                    }
+                    Text(Localizable.addRateItemImageLoaded.rawValue)
+                        .foregroundColor(.green)
+                }
+            )
+            #else
             return AnyView(selectedImageView)
+            #endif
         }
     }
     
@@ -176,15 +195,39 @@ struct AddRateView: View {
     }
     
     private func selectImage() {
+        #if os(macOS)
+        
+        NSOpenPanel.openImage { result in
+            guard case let .success(image) = result else { return }
+            inputImage = image
+            checkImage()
+        }
+        
+        #else
+        
         viewModel.showingImagePicker = true
+        
+        #endif
     }
     
     private func checkImage() {
+        #if os(macOS)
+        
         guard let image = inputImage else { return }
         let imageName = "\(UUID())"
         viewModel.newItem.image = imageName
         FilesManager.save(image: image, name: imageName)
         viewModel.selectedImage = Image(fileName: viewModel.newItem.image)
+        
+        #else
+        
+        guard let image = inputImage else { return }
+        let imageName = "\(UUID())"
+        viewModel.newItem.image = imageName
+        FilesManager.save(image: image, name: imageName)
+        viewModel.selectedImage = Image(fileName: viewModel.newItem.image)
+
+        #endif
     }
     
 }

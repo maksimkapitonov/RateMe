@@ -50,11 +50,14 @@
 		FB2B83AC25DE91650093969D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83AB25DE91650093969D /* ButtonStyle.swift */; };
 		FB2B83AD25DE91650093969D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83AB25DE91650093969D /* ButtonStyle.swift */; };
 		FB2B83B325DE9FF00093969D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83B225DE9FF00093969D /* ImagePicker.swift */; };
-		FB2B83B425DE9FF00093969D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83B225DE9FF00093969D /* ImagePicker.swift */; };
 		FB2B83BB25DEAB090093969D /* ImageExtansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83BA25DEAB090093969D /* ImageExtansions.swift */; };
 		FB2B83BC25DEAB090093969D /* ImageExtansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83BA25DEAB090093969D /* ImageExtansions.swift */; };
 		FB2B83C225DEC2A20093969D /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83C125DEC2A20093969D /* FilesManager.swift */; };
 		FB2B83C325DEC2A20093969D /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83C125DEC2A20093969D /* FilesManager.swift */; };
+		FB2B83CD25DFE9ED0093969D /* NSOpenPanelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83CC25DFE9ED0093969D /* NSOpenPanelExtensions.swift */; };
+		FB2B83D325E00B540093969D /* NSBitmapImageRepExtensions_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83D225E00B540093969D /* NSBitmapImageRepExtensions_macOS.swift */; };
+		FB2B83D725E00B740093969D /* DataExtensions_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83D625E00B740093969D /* DataExtensions_macOS.swift */; };
+		FB2B83DB25E00B920093969D /* NSImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83DA25E00B920093969D /* NSImageExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,10 @@
 		FB2B83B225DE9FF00093969D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		FB2B83BA25DEAB090093969D /* ImageExtansions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtansions.swift; sourceTree = "<group>"; };
 		FB2B83C125DEC2A20093969D /* FilesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesManager.swift; sourceTree = "<group>"; };
+		FB2B83CC25DFE9ED0093969D /* NSOpenPanelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSOpenPanelExtensions.swift; sourceTree = "<group>"; };
+		FB2B83D225E00B540093969D /* NSBitmapImageRepExtensions_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSBitmapImageRepExtensions_macOS.swift; sourceTree = "<group>"; };
+		FB2B83D625E00B740093969D /* DataExtensions_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions_macOS.swift; sourceTree = "<group>"; };
+		FB2B83DA25E00B920093969D /* NSImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +339,10 @@
 			isa = PBXGroup;
 			children = (
 				FB2B83BA25DEAB090093969D /* ImageExtansions.swift */,
+				FB2B83CC25DFE9ED0093969D /* NSOpenPanelExtensions.swift */,
+				FB2B83D225E00B540093969D /* NSBitmapImageRepExtensions_macOS.swift */,
+				FB2B83D625E00B740093969D /* DataExtensions_macOS.swift */,
+				FB2B83DA25E00B920093969D /* NSImageExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -468,13 +479,14 @@
 			files = (
 				FB2B836A25DD14D50093969D /* RateCardView.swift in Sources */,
 				FB2B836125DD0AF60093969D /* NavigationItems.swift in Sources */,
+				FB2B83CD25DFE9ED0093969D /* NSOpenPanelExtensions.swift in Sources */,
 				FB2B82AF25DA894F0093969D /* InitialView.swift in Sources */,
 				FB2B83A725DE8D4B0093969D /* Images.swift in Sources */,
 				FB2B835A25DC16450093969D /* StarsView.swift in Sources */,
 				FB2B82AD25DA894F0093969D /* RateMeApp.swift in Sources */,
 				FB2B82EB25DAA3EB0093969D /* TabbarView.swift in Sources */,
 				FB2B83BC25DEAB090093969D /* ImageExtansions.swift in Sources */,
-				FB2B83B425DE9FF00093969D /* ImagePicker.swift in Sources */,
+				FB2B83D325E00B540093969D /* NSBitmapImageRepExtensions_macOS.swift in Sources */,
 				FB2B832925DACA6B0093969D /* AddRateView.swift in Sources */,
 				FB2B838C25DD676C0093969D /* RateData.swift in Sources */,
 				FB2B83C325DEC2A20093969D /* FilesManager.swift in Sources */,
@@ -485,7 +497,9 @@
 				FB2B835025DBC2CB0093969D /* AddRateViewModel.swift in Sources */,
 				FB2B833E25DBBA4D0093969D /* MyRatesView.swift in Sources */,
 				FB2B83AD25DE91650093969D /* ButtonStyle.swift in Sources */,
+				FB2B83D725E00B740093969D /* DataExtensions_macOS.swift in Sources */,
 				FB2B830325DAB4B20093969D /* Localizable.swift in Sources */,
+				FB2B83DB25E00B920093969D /* NSImageExtensions.swift in Sources */,
 				FB2B82CB25DA92040093969D /* SidebarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,6 +24,23 @@ struct FilesManager {
         }
     }
     
+    #if os(macOS)
+    
+    static func save(image: NSImage, name: String) {
+        let paths  = FileManager.default.urls(
+            for: .documentDirectory,
+            in: .userDomainMask
+        )
+        let documentsDirectoryPath = paths.first
+        
+        if let pngData = image.png,
+           let path = documentsDirectoryPath?.appendingPathComponent(name) {
+            try? pngData.write(to: path)
+        }
+    }
+    
+    #else
+    
     static func save(image: UIImage, name: String) {
         let paths = FileManager.default.urls(
             for: .documentDirectory,
@@ -37,6 +54,8 @@ struct FilesManager {
         }
     }
     
+    #endif
+    
     // MARK: - Load
 
     static func loadImage(name: String?) -> Image? {
@@ -49,11 +68,20 @@ struct FilesManager {
         )
         if let documentsDirectory = paths.first {
             let imageUrl = documentsDirectory.appendingPathComponent(fileName)
+            
+            #if os(macOS)
+            if let image = NSImage(contentsOfFile: imageUrl.path) {
+                return Image(nsImage: image)
+            } else {
+                return nil
+            }
+            #else
             if let image = UIImage(contentsOfFile: imageUrl.path) {
                 return Image(uiImage: image)
             } else {
                 return nil
             }
+            #endif
         } else {
             return nil
         }

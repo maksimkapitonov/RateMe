@@ -39,6 +39,8 @@
 "addRateItemAddToFavourites" = "Add to favourites";
 "addRateItemImage" = "Image";
 "addRateItemLoadImage" = "Upload your image";
+"addRateItemImageLoaded" = "Image loaded";
+"addRateItemChangeImage" = "Change image";
 
 // MARK: - My rates
 

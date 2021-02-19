@@ -39,6 +39,8 @@
 "addRateItemAddToFavourites" = "Добавить в избранное";
 "addRateItemImage" = "Изображение";
 "addRateItemLoadImage" = "Загрузите изображение";
+"addRateItemImageLoaded" = "Изображение загружено";
+"addRateItemChangeImage" = "Изменить изображение";
 
 // MARK: - My rates
 
