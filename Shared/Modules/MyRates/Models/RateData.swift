@@ -10,6 +10,10 @@ import Combine
 
 final class RateData: ObservableObject {
     
-    @Published var rateItems: RateItems = []
+    @Published var rateItems: RateItems = FilesManager.loadRateItems() ?? [] {
+        didSet {
+            FilesManager.save(rateItems: rateItems)
+        }
+    }
     
 }

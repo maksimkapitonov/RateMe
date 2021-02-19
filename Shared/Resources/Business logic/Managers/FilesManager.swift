@@ -9,6 +9,21 @@ import SwiftUI
 
 struct FilesManager {
     
+    // MARK: - Save
+    
+    static func save(rateItems items: RateItems) {
+        let paths = FileManager.default.urls(
+            for: .documentDirectory,
+            in: .userDomainMask
+        )
+        let documentsDirectoryPath = paths.first
+        
+        if let jsonData = try? JSONEncoder().encode(items),
+           let path = documentsDirectoryPath?.appendingPathComponent("rateItems") {
+            try? jsonData.write(to: path)
+        }
+    }
+    
     static func save(image: UIImage, name: String) {
         let paths = FileManager.default.urls(
             for: .documentDirectory,
@@ -22,6 +37,8 @@ struct FilesManager {
         }
     }
     
+    // MARK: - Load
+
     static func loadImage(name: String?) -> Image? {
         guard let fileName = name else {
             return nil
@@ -40,6 +57,20 @@ struct FilesManager {
         } else {
             return nil
         }
+    }
+    
+    static func loadRateItems() -> RateItems? {
+        let paths = FileManager.default.urls(
+            for: .documentDirectory,
+            in: .userDomainMask
+        )
+        if let documentsDirectory = paths.first {
+            let dataUrl = documentsDirectory.appendingPathComponent("rateItems")
+            if let decodedItems = try? JSONDecoder().decode(RateItems.self, from: Data(contentsOf: dataUrl)) {
+                return decodedItems
+            }
+        }
+        return nil
     }
     
 }
