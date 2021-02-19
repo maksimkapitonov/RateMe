@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Combine
+import SwiftUI
 
 final class AddRateViewModel: ObservableObject {
     
@@ -17,8 +17,12 @@ final class AddRateViewModel: ObservableObject {
         name: "",
         rating: 3,
         isFavourite: false,
-        description: ""
+        description: "",
+        createdAt: Date()
     )
+    
+    @Published var showingImagePicker = false
+    @Published var selectedImage: Image?
     
     // MARK: - Methods
     

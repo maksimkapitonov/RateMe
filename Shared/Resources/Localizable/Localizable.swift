@@ -40,6 +40,8 @@ enum Localizable: LocalizedStringKey {
     case addRateItemRating
     case addRateItemDescription
     case addRateItemAddToFavourites
+    case addRateItemImage
+    case addRateItemLoadImage
     
     // MARK: - My rates
     

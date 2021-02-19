@@ -16,5 +16,7 @@ struct RateItem: Codable, Hashable {
     var rating: Int
     var isFavourite: Bool
     var description: String
+    var image: String?
+    let createdAt: Date
     
 }

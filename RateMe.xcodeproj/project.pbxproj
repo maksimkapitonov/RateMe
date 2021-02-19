@@ -49,6 +49,12 @@
 		FB2B83A725DE8D4B0093969D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83A525DE8D4B0093969D /* Images.swift */; };
 		FB2B83AC25DE91650093969D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83AB25DE91650093969D /* ButtonStyle.swift */; };
 		FB2B83AD25DE91650093969D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83AB25DE91650093969D /* ButtonStyle.swift */; };
+		FB2B83B325DE9FF00093969D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83B225DE9FF00093969D /* ImagePicker.swift */; };
+		FB2B83B425DE9FF00093969D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83B225DE9FF00093969D /* ImagePicker.swift */; };
+		FB2B83BB25DEAB090093969D /* ImageExtansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83BA25DEAB090093969D /* ImageExtansions.swift */; };
+		FB2B83BC25DEAB090093969D /* ImageExtansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83BA25DEAB090093969D /* ImageExtansions.swift */; };
+		FB2B83C225DEC2A20093969D /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83C125DEC2A20093969D /* FilesManager.swift */; };
+		FB2B83C325DEC2A20093969D /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B83C125DEC2A20093969D /* FilesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +85,9 @@
 		FB2B83A025DE86D20093969D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FB2B83A525DE8D4B0093969D /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		FB2B83AB25DE91650093969D /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		FB2B83B225DE9FF00093969D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FB2B83BA25DEAB090093969D /* ImageExtansions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtansions.swift; sourceTree = "<group>"; };
+		FB2B83C125DEC2A20093969D /* FilesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +177,7 @@
 		FB2B82D225DA94A40093969D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FB2B83B025DE9FD40093969D /* Business logic */,
 				FB2B83AA25DE914E0093969D /* Styles */,
 				FB2B839D25DE86920093969D /* Colors */,
 				FB2B82DA25DA9EA00093969D /* Localizable */,
@@ -300,6 +310,32 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
+		FB2B83B025DE9FD40093969D /* Business logic */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B83B925DEAAF70093969D /* Extensions */,
+				FB2B83B125DE9FE20093969D /* Managers */,
+			);
+			path = "Business logic";
+			sourceTree = "<group>";
+		};
+		FB2B83B125DE9FE20093969D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B83B225DE9FF00093969D /* ImagePicker.swift */,
+				FB2B83C125DEC2A20093969D /* FilesManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FB2B83B925DEAAF70093969D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B83BA25DEAB090093969D /* ImageExtansions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -409,8 +445,11 @@
 				FB2B835925DC16450093969D /* StarsView.swift in Sources */,
 				FB2B82AC25DA894F0093969D /* RateMeApp.swift in Sources */,
 				FB2B82EA25DAA3EB0093969D /* TabbarView.swift in Sources */,
+				FB2B83BB25DEAB090093969D /* ImageExtansions.swift in Sources */,
+				FB2B83B325DE9FF00093969D /* ImagePicker.swift in Sources */,
 				FB2B832825DACA6B0093969D /* AddRateView.swift in Sources */,
 				FB2B838B25DD676C0093969D /* RateData.swift in Sources */,
+				FB2B83C225DEC2A20093969D /* FilesManager.swift in Sources */,
 				FB2B833025DACB270093969D /* RateItem.swift in Sources */,
 				FB2B83A125DE86D20093969D /* Colors.swift in Sources */,
 				FB2B82F225DAA4760093969D /* Icons.swift in Sources */,
@@ -434,8 +473,11 @@
 				FB2B835A25DC16450093969D /* StarsView.swift in Sources */,
 				FB2B82AD25DA894F0093969D /* RateMeApp.swift in Sources */,
 				FB2B82EB25DAA3EB0093969D /* TabbarView.swift in Sources */,
+				FB2B83BC25DEAB090093969D /* ImageExtansions.swift in Sources */,
+				FB2B83B425DE9FF00093969D /* ImagePicker.swift in Sources */,
 				FB2B832925DACA6B0093969D /* AddRateView.swift in Sources */,
 				FB2B838C25DD676C0093969D /* RateData.swift in Sources */,
+				FB2B83C325DEC2A20093969D /* FilesManager.swift in Sources */,
 				FB2B833125DACB270093969D /* RateItem.swift in Sources */,
 				FB2B83A225DE86D20093969D /* Colors.swift in Sources */,
 				FB2B82F325DAA4760093969D /* Icons.swift in Sources */,

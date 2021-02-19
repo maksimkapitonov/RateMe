@@ -9,13 +9,13 @@ import SwiftUI
 
 extension AddRateView {
     struct Constants {
-        let minRating = 1
-        let maxRating = 5
+        let ratingRange = 1...5
         let textEditorHeight: CGFloat = 150
         let macOSPickerHeight: CGFloat = 150
         let iOSPickerHeight: CGFloat = 100
         let macOSBodyPadding: CGFloat = 30
         let macOSBodyMinWidth: CGFloat = 500
+        let imageViewCornerRadius: CGFloat = 12
     }
 }
 
@@ -29,7 +29,7 @@ struct AddRateView: View {
     // MARK: - Private properties
     
     @ObservedObject private var viewModel = AddRateViewModel()
-    private var ratings = Constants().minRating...Constants().maxRating
+    @State private var inputImage: UIImage?
     
     // MARK: - Init
     
@@ -59,7 +59,7 @@ struct AddRateView: View {
             
             Section(header: Text(Localizable.addRateItemRating.rawValue)) {
                 Picker("", selection: $viewModel.newItem.rating) {
-                    ForEach(ratings, id: \.self) { rating in
+                    ForEach(Constants().ratingRange, id: \.self) { rating in
                         StarsView(rating: rating)
                     }
                 }
@@ -72,6 +72,10 @@ struct AddRateView: View {
                     Localizable.addRateItemAddToFavourites.rawValue,
                     isOn: $viewModel.newItem.isFavourite
                 )
+            }
+            
+            Section(header: Text(Localizable.addRateItemImage.rawValue)) {
+                itemImage
             }
             
             Section(header: Text(Localizable.addRateItemDescription.rawValue)) {
@@ -99,6 +103,33 @@ struct AddRateView: View {
             }
             #endif
         }
+        .sheet(isPresented: $viewModel.showingImagePicker, onDismiss: checkImage) {
+            ImagePicker(image: self.$inputImage)
+        }
+    }
+    
+    private var itemImage: AnyView {
+        if viewModel.selectedImage == nil {
+            return AnyView(addImageView)
+        } else {
+            return AnyView(selectedImageView)
+        }
+    }
+    
+    private var addImageView: some View {
+        Button(action: selectImage) {
+            Text(Localizable.addRateItemLoadImage.rawValue)
+        }
+    }
+    
+    private var selectedImageView: some View {
+        Image(fileName: viewModel.newItem.image)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .clipped()
+            .cornerRadius(Constants().imageViewCornerRadius)
+            .padding()
+            .onTapGesture(perform: selectImage)
     }
     
     private var pickerStyle: some PickerStyle {
@@ -140,8 +171,20 @@ struct AddRateView: View {
     }
     
     private func saveItem() {
-        presentationMode.wrappedValue.dismiss()
         data.rateItems.append(viewModel.newItem)
+        presentationMode.wrappedValue.dismiss()
+    }
+    
+    private func selectImage() {
+        viewModel.showingImagePicker = true
+    }
+    
+    private func checkImage() {
+        guard let image = inputImage else { return }
+        let imageName = "\(UUID())"
+        viewModel.newItem.image = imageName
+        FilesManager.save(image: image, name: imageName)
+        viewModel.selectedImage = Image(fileName: viewModel.newItem.image)
     }
     
 }

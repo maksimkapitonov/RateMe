@@ -37,6 +37,8 @@
 "addRateItemRating" = "Rating";
 "addRateItemDescription" = "Description";
 "addRateItemAddToFavourites" = "Add to favourites";
+"addRateItemImage" = "Image";
+"addRateItemLoadImage" = "Upload your image";
 
 // MARK: - My rates
 

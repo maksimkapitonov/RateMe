@@ -10,6 +10,12 @@ import SwiftUI
 
 struct Images {
     
+    // MARK: - Placeholders
+    
+    static let placeHolder = Image("placeholder")
+    
+    // MARK: - Illustrations
+    
     static let rateImage = Image("rateImage")
     
 }

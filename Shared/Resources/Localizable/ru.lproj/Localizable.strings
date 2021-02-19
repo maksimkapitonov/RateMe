@@ -37,6 +37,8 @@
 "addRateItemRating" = "Рейтинг";
 "addRateItemDescription" = "Описание";
 "addRateItemAddToFavourites" = "Добавить в избранное";
+"addRateItemImage" = "Изображение";
+"addRateItemLoadImage" = "Загрузите изображение";
 
 // MARK: - My rates
 
